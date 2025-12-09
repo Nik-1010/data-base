@@ -15,3 +15,5 @@
 
 ## Er-Диаграмма
 <img width="788" height="438" alt="image" src="https://github.com/user-attachments/assets/ca891216-6c68-49e8-a587-fcc147b03a43" />
+
+## Логическая модель
