@@ -81,23 +81,23 @@ erDiagram
 **1.  Product → ProductInShop**
 Тип: 1:N (один ко многим)
 
-Описание: Один товар → много записей в разных магазинах
+- Описание: Один товар → много записей в разных магазинах
 
-Связь: Product.id → ProductInShop.product_id
+- Связь: Product.id → ProductInShop.product_id
 
 **2. Shop → ProductInShop**
-Тип: 1:N (один ко многим)
+- Тип: 1:N (один ко многим)
 
-Описание: Один магазин → много записей с разными товарами
+- Описание: Один магазин → много записей с разными товарами
 
-Связь: Shop.id → ProductInShop.shop_id
+- Связь: Shop.id → ProductInShop.shop_id
 
 **3. Product ↔ Shop**
-Тип: M:N (многие ко многим) через ProductInShop
+- Тип: M:N (многие ко многим) через ProductInShop
 
-Описание: Много товаров в многих магазинах
+- Описание: Много товаров в многих магазинах
 
-Уникальность: Пара (product_id, shop_id) уникальна в ProductInShop
+- Уникальность: Пара (product_id, shop_id) уникальна в ProductInShop
 
 ### Особенности нормализации до 3NF:
 
