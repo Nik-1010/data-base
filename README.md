@@ -14,6 +14,31 @@
 с подсчетом средней площади всех магазинов.
 
 ## Er-Диаграмма
-<img width="788" height="438" alt="image" src="https://github.com/user-attachments/assets/ca891216-6c68-49e8-a587-fcc147b03a43" />
+erDiagram
+    Product ||--o{ ProductInShop : "имеет в магазинах"
+    Shop ||--o{ ProductInShop : "содержит товары"
+
+    Product {
+        int id PK "ID товара"
+        string name "Наименование"
+        string grade "Сорт"
+    }
+
+    Shop {
+        int id PK "ID магазина"
+        string number "Номер магазина"
+        string name "Название"
+        string address "Адрес"
+        decimal area "Площадь (кв.м)"
+    }
+
+    ProductInShop {
+        int id PK "ID записи"
+        int product_id FK "ID товара"
+        int shop_id FK "ID магазина"
+        string unit "Единица измерения"
+        decimal price_per_unit "Цена за единицу"
+        decimal quantity "Количество"
+    }
 
 ## Логическая модель
