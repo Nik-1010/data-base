@@ -78,21 +78,21 @@ erDiagram
 
 - quantity — количество единиц товара в магазине
 
-  Product → ProductInShop
+**1.  Product → ProductInShop**
 Тип: 1:N (один ко многим)
 
 Описание: Один товар → много записей в разных магазинах
 
 Связь: Product.id → ProductInShop.product_id
 
-2. Shop → ProductInShop
+**2. Shop → ProductInShop**
 Тип: 1:N (один ко многим)
 
 Описание: Один магазин → много записей с разными товарами
 
 Связь: Shop.id → ProductInShop.shop_id
 
-3. Product ↔ Shop
+**3. Product ↔ Shop**
 Тип: M:N (многие ко многим) через ProductInShop
 
 Описание: Много товаров в многих магазинах
