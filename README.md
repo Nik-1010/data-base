@@ -14,6 +14,7 @@
 с подсчетом средней площади всех магазинов.
 
 ## Er-Диаграмма
+```mermaid
 erDiagram
     Product ||--o{ ProductInShop : "имеет в магазинах"
     Shop ||--o{ ProductInShop : "содержит товары"
@@ -40,5 +41,5 @@ erDiagram
         decimal price_per_unit "Цена за единицу"
         decimal quantity "Количество"
     }
-
+```
 ## Логическая модель
